@@ -3,7 +3,7 @@
 version=PrivAlpha0.0.1
 
 
-echo -e "Welcome to the automated HTC Glacier Cyanogenmod rom compilier."
+echo -e "Welcome to the automated Cyanogenmod rom compilier."
 echo "This script was created by Matada@XDA Developers."
 echo "the original thread for this script can be found at: http://www.forums.xda-developers.com/ "
 clear
@@ -70,8 +70,8 @@ fi
   if [ "$?" != "1" ]
   then
     case $opt in
-      1) clear; scripts/check_rom; continue;;
-      2) scripts/version_select.sh
+      1) scripts/version_select.sh
+      2) scripts/device_select.sh
       3) 
       u) scripts/about $version; continue;;
       x) scripts/init_kitchen; clear; echo; echo "Goodbye."; echo; exit 1;;
