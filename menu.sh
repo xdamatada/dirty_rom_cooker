@@ -1,9 +1,11 @@
 #!/bin/bash
-
+exec menu.sh 2>&1 | tee logs/out.log
 version=PrivAlpha0.0.1
 
 
-echo -e "Welcome to the automated Cyanogenmod rom compilier."
+
+echo
+echo "Welcome to the automated Cyanogenmod rom compilier."
 echo "This script was created by Matada@XDA Developers."
 echo "the original thread for this script can be found at: http://www.forums.xda-developers.com/ "
 clear
@@ -21,8 +23,7 @@ then
   echo "installed, otherwise the cooker will have problems running the"
   echo "scripts.  After you 'cd' to the correct folder, start the cooker"
   echo "with the "sudo ./menu" command, NOT with any other command or method!"
-  clear
-fi
+  fi
 
 dir_list=( android logs scripts output )
 error_found=0
@@ -51,7 +52,7 @@ fi
   echo "============================================================"
   echo 
   echo "> MAIN MENU"
-  echo
+  echo " ALPHA SOFTWARE. NOT FINAL."
   echo "  1 - Select Version"
   echo "  2 - Select Device"
   echo "  3 - Begin"
@@ -61,21 +62,16 @@ fi
   echo 
   echo -n "Enter option: "
   read opt
-
-  if [ "$opt" != "x" ] && [ "$opt" != "u" ] && [ "$opt" != "1" ]
-  then
-    scripts/check_multiple_working
-  fi
   
   if [ "$?" != "1" ]
   then
     case $opt in
-      1) scripts/version_select.sh
-      2) scripts/device_select.sh
-      3) 
-      u) scripts/about $version; continue;;
-      x) scripts/init_kitchen; clear; echo; echo "Goodbye."; echo; exit 1;;
-      *) echo "Invalid option"; continue;;
+     1) scripts/version_select.sh
+     2) scripts/device_select.sh
+     3) scripts/start.sh 
+     4) scripts/about.sh continue;;
+     x) clear; echo; echo "Goodbye."; echo; exit 1;;
+     *) echo "Invalid option"; continue;;
     esac
   fi
 
