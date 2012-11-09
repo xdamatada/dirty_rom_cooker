@@ -1,6 +1,6 @@
 #!/bin/bash
 exec menu.sh 2>&1 | tee logs/Device_select.log
-version=Alpha20121108
+version=2012/11/09Alpha
 
 
 dir_list=( scripts/devices )

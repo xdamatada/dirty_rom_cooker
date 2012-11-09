@@ -1,10 +1,10 @@
 #!/bin/bash
 
-version=Dev_sel_2012/11/08_ALPHA
+version=2012/11/09Alpha
   
 echo 
   echo "============================================================"
-  echo " Device Selection. Current as of 2012/11/08"
+  echo " Device Selection. Current as of $version"
   echo "============================================================"
   echo 
   echo "> Device Selection"
@@ -17,15 +17,6 @@ echo
   echo "  5) - Nexus One (Passion)"
   echo "  6) - Galaxy Nexus Verizon (Toro)"
   echo "  7) - Galaxy Nexus Sprint (Toroplus)"
-  echo "  8) - HTC"
-  echo "  9) - Huawei"
-  echo "  10) - LG"
-  echo "  11) - Motorola"
-  echo "  12) - Samsung"
-  echo "  13) - Sony Ericsson"
-  echo "  14) - T-Mobile"
-  echo "  15) - Viewsonic"
-  echo "  16) - ZTE"
   echo "  X) - Exit"
 
 
