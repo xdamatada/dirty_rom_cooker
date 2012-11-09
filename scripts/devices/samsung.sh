@@ -1,26 +1,26 @@
 #!/bin/bash
 
-version=Dev_sel_2012/11/08_ALPHA
+$version=2012/11/09
   
 echo 
   echo "============================================================"
-  echo " Device Selection. Current as of 2012/11/08"
+  echo " Samsung Device Selection. Current as of $version"
   echo "============================================================"
   echo 
   echo "> Device Selection"
   echo " ALPHA SOFTWARE. NOT FINAL."
   echo
-  echo "  1) - Galaxy Nexus VZW (Toro)"
+
   echo "  2) - Vibrant"
-  echo "  3) - Galaxy Nexus Sprint (Toroplus)"
+
   echo "  4) - Galaxy S Blaze (t769)"
   echo "  5) - Galaxy S III AT&T"
   echo "  6) - Galaxy S III Metro PCS"
   echo "  7) - Galaxy S III T-Mobile"
   echo "  8) - Galaxy S III US Cellular"
   echo "  9) - Galaxy S III VZW"
-  echo "  10) - Epic 4G"
-  echo "  11) - Fascinate"
+  
+
   echo "  12) - Galaxy S2"
   echo "  13) - Galaxy S2 ATT"
   echo "  14) - Galaxy S2 (B)"
@@ -29,10 +29,10 @@ echo
   echo "  X) - Galaaxy S2 AT&T"
   echo "  X) - Galaxy S2 Intl"
   echo "  X) - Galaxy S2 (G)"
-  echo "  X) - Glaaxy S III Intl"
+  echo "  X) - Galaxy S III Intl"
   echo "  X) - Mesmerize"
-  echo "  X) - Galaxy Note Intl"
-  echo "  X) - Galaxy Note 10 "
+
+
   echo "  X) - Galaxy Tab GSM (p1)"
   echo "  X) - Galaxy Tab CDMA (p1c)"
   echo "  X) - Galaxy Tab P1000L GSM (p1n)"
@@ -49,10 +49,10 @@ echo
   echo "  X) - Galaxy Tab 2 Wi-Fi (P5110)"
   echo "  X) - Galaxy Tab 2 Wi-Fi + IR (P5113)"
   echo "  X) - Galaxy Tab 8.9 Wi-Fi (P5Wifi)"
-  echo "  X) - Galaxy Note AT&T"
+
   echo "  X) - Galaxy S II Skyricket, Galaxy S II LTE (Rogers)"
   echo "  X) - Galaxy S Blaze 4G"
-  echo "  X) - Galaxy Mini"
+
   echo "  X) - Vibrant"
   echo "  X) - Exit"
 

@@ -1,1 +1,24 @@
-./menu.sh: line 2: exec: menu.sh: not found
+/c/Users/Zoey/dirty/dirty_rom_cooker/menu.sh: line 2: 17632 Exit 58                 exec menu.sh 2>&1
+     17648 Hangup                  | tee logs/out.log
+/c/Users/Zoey/dirty/dirty_rom_cooker/menu.sh: line 2: 16832 Exit 58                 exec menu.sh 2>&1
+     16884 Hangup                  | tee logs/out.log
+/c/Users/Zoey/dirty/dirty_rom_cooker/menu.sh: line 2: 14352 Exit 58                 exec menu.sh 2>&1
+     14368 Hangup                  | tee logs/out.log
+/c/Users/Zoey/dirty/dirty_rom_cooker/menu.sh: line 2: 12584 Exit 58                 exec menu.sh 2>&1
+     12600 Hangup                  | tee logs/out.log
+/c/Users/Zoey/dirty/dirty_rom_cooker/menu.sh: line 2: 11276 Exit 58                 exec menu.sh 2>&1
+     11292 Hangup                  | tee logs/out.log
+/c/Users/Zoey/dirty/dirty_rom_cooker/menu.sh: line 2:  9544 Exit 58                 exec menu.sh 2>&1
+      9596 Hangup                  | tee logs/out.log
+/c/Users/Zoey/dirty/dirty_rom_cooker/menu.sh: line 2:  9360 Broken pipe             exec menu.sh 2>&1
+      9412 Hangup                  | tee logs/out.log
+/c/Users/Zoey/dirty/dirty_rom_cooker/menu.sh: line 2:  8864 Broken pipe             exec menu.sh 2>&1
+      9008 Hangup                  | tee logs/out.log
+/c/Users/Zoey/dirty/dirty_rom_cooker/menu.sh: line 2:  8884 Exit 58                 exec menu.sh 2>&1
+      8900 Hangup                  | tee logs/out.log
+/c/Users/Zoey/dirty/dirty_rom_cooker/menu.sh: line 2:  6908 Broken pipe             exec menu.sh 2>&1
+      4224 Hangup                  | tee logs/out.log
+/c/Users/Zoey/dirty/dirty_rom_cooker/menu.sh: line 2:  3552 Exit 58                 exec menu.sh 2>&1
+      5532 Hangup                  | tee logs/out.log
+/c/Users/Zoey/dirty/dirty_rom_cooker/menu.sh: line 2:  5996 Exit 58                 exec menu.sh 2>&1
+      6100 Hangup                  | tee logs/out.log
