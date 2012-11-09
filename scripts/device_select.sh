@@ -14,6 +14,13 @@ do
     error_found=1
   fi
 
+if [ $error_found == 1 ]
+then
+  echo
+  echo "Please check that you have extracted all files correctly."
+  exit 0
+fi
+
   
 echo 
   echo "============================================================"
