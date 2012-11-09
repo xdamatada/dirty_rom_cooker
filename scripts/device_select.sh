@@ -26,7 +26,7 @@ echo
   echo "  14) - T-Mobile"
   echo "  15) - Viewsonic"
   echo "  16) - ZTE"
-  echo "  17) - Exit"
+  echo "  X) - Exit"
 
 
 
@@ -49,9 +49,10 @@ echo
     10) devices/lg.sh
     11) devices/motorola.sh
     12) devices/samsung.sh
-    13) devices/tmo.sh
-    14) devices/viewsonic.sh
-    15) devices/zte.sh
+    13) devices/sony.sh
+    14) devices/tmo.sh
+    15) devices/viewsonic.sh
+    16) devices/zte.sh
      x) clear; echo; echo "Goodbye."; echo; exit 1;;
      *) echo "Invalid option"; continue;;
     esac
