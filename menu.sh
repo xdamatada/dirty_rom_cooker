@@ -66,17 +66,13 @@ fi
   if [ "$?" != "1" ]
   then
     case $opt in
-     1) scripts/version_select.sh
-     2) scripts/device_select.sh
-     3) scripts/start.sh 
+     1) scripts/version_select.sh ;;
+     2) scripts/device_select.sh continue;;
+     3) scripts/start.sh;;
      4) scripts/about.sh continue;;
      x) clear; echo; echo "Goodbye."; echo; exit 1;;
      *) echo "Invalid option"; continue;;
     esac
   fi
-
-  scripts/press_enter
-
-done
 
 
