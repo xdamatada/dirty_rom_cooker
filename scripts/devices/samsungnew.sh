@@ -1,7 +1,7 @@
 #!/bin/bash
 
 $version=2012/11/09
-  
+SAVEFILE= ~/dirty/varibles.txt  
 echo 
   echo "============================================================"
   echo " Samsung Device Selection. Current as of $version"
@@ -43,15 +43,17 @@ echo
  echo "  32) - Galaxy Tab 10.1 T-Mobile (p4tmo)"
  echo "  33) - Galaxy Tab 10.1 Verizon (p4vzw)"
  echo "  34) - Galaxy Tab 10.1 Wi-Fi (p4wifi)"
- 
-
-
-
-
-
-
-
-
+ echo "  35) - Galaxy Tab 10.1v 3G (GT-P7100)"
+ echo "  36) - Galaxy Tab 8.9 GSM (P5)"
+ echo "  37) - Galaxy Tab 8.9 wifi (p5wifi)"
+ echo "  38) - Galaxy Tab 2 7.0 GSM (GT-P3100)"
+ echo "  39) - Galaxy Tab 2 7.0 WiFi (GT-P3110)"
+ echo "  40) - Galaxy Tab 2 10.1 GSM (P5100)"
+ echo "  41) - Galaxy Tab 2 10.1 Wi-Fi (P5110)"
+ echo "  42) - Galaxy Tab 2 10.1 Wi-Fi + IR (P5113)"
+ echo "  43) - Mesmerize (mesmerizemtd)"
+ echo "  44) - Vibrant (vibrantmtd)"
+  echo "  X) - Exit"
 
   echo 
   echo -n "Enter option: "
