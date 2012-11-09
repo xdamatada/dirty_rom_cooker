@@ -1,13 +1,26 @@
 #!/bin/bash
-
+exec menu.sh 2>&1 | tee logs/Device_select.log
 version=Dev_sel_2012/11/08_ALPHA
+
+
+dir_list=( scripts/devices )
+error_found=0
+
+for check_dir in ${dir_list[@]}
+do
+  if [ ! -e $check_dir ]
+  then
+    echo "Error: Folder '$check_dir' not found"
+    error_found=1
+  fi
+
   
 echo 
   echo "============================================================"
-  echo " Device Selection. Current as of 2012/11/08"
+  echo " Device Selection. Current as of $Version"
   echo "============================================================"
   echo 
-  echo "> Device Selection"
+  echo " Device Selection"
   echo " ALPHA SOFTWARE. NOT FINAL."
   echo
   echo "  1) - Advent"
@@ -37,22 +50,22 @@ echo
   if [ "$?" != "1" ]
   then
     case $opt in
-     1) devices/advent.sh
-     2) devices/asus.sh
-     3) devices/barnes.sh
-     4) devices/commtiva.sh
-     5) devices/geek.sh 
-     6) devices/google.sh
-     7) devices/hp.sh
-     8) devices/htc.sh
-     9) devices/huawei.sh
-    10) devices/lg.sh
-    11) devices/motorola.sh
-    12) devices/samsung.sh
-    13) devices/sony.sh
-    14) devices/tmo.sh
-    15) devices/viewsonic.sh
-    16) devices/zte.sh
+     1) scripts/devices/advent.sh ;;
+     2) scripts/devices/asus.sh ;;
+     3) scripts/devices/barnes.sh ;;
+     4) scripts/devices/commtiva.sh ;;
+     5) scripts/devices/geek.sh ;;
+     6) scripts/devices/google.sh ;;
+     7) scripts/devices/hp.sh ;;
+     8) scripts/devices/htc.sh ;;
+     9) scripts/devices/huawei.sh ;;
+    10) scripts/devices/lg.sh ;;
+    11) scripts/devices/motorola.sh ;;
+    12) scripts/devices/samsung.sh ;;
+    13) scripts/devices/sony.sh ;;
+    14) scripts/devices/tmo.sh ;;
+    15) scripts/devices/viewsonic.sh ;;
+    16) scripts/devices/zte.sh ;;
      x) clear; echo; echo "Goodbye."; echo; exit 1;;
      *) echo "Invalid option"; continue;;
     esac
