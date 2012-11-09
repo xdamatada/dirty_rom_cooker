@@ -1,6 +1,6 @@
 #!/bin/bash
 exec menu.sh 2>&1 | tee logs/Device_select.log
-version=Dev_sel_2012/11/08_ALPHA
+version=Alpha20121108
 
 
 dir_list=( scripts/devices )
@@ -24,7 +24,7 @@ fi
   
 echo 
   echo "============================================================"
-  echo " Device Selection. Current as of $Version"
+  echo " Device Selection. Current as of $version "
   echo "============================================================"
   echo 
   echo " Device Selection"
@@ -57,11 +57,11 @@ echo
   if [ "$?" != "1" ]
   then
     case $opt in
-     1) scripts/devices/advent.sh ;;
+     1) scripts/devices/other.sh ;;
      2) scripts/devices/asus.sh ;;
-     3) scripts/devices/barnes.sh ;;
-     4) scripts/devices/commtiva.sh ;;
-     5) scripts/devices/geek.sh ;;
+     3) scripts/devices/other.sh ;;
+     4) scripts/devices/other.sh ;;
+     5) scripts/devices/other.sh ;;
      6) scripts/devices/google.sh ;;
      7) scripts/devices/hp.sh ;;
      8) scripts/devices/htc.sh ;;
@@ -71,8 +71,8 @@ echo
     12) scripts/devices/samsung.sh ;;
     13) scripts/devices/sony.sh ;;
     14) scripts/devices/tmo.sh ;;
-    15) scripts/devices/viewsonic.sh ;;
-    16) scripts/devices/zte.sh ;;
+    15) scripts/devices/other.sh ;;
+    16) scripts/devices/other.sh ;;
      x) clear; echo; echo "Goodbye."; echo; exit 1;;
      *) echo "Invalid option"; continue;;
     esac

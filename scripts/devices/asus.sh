@@ -1,31 +1,19 @@
 #!/bin/bash
-
-version=Dev_sel_2012/11/08_ALPHA
+exec menu.sh 2>&1 | tee logs/Device_select.log
+version=Alpha20121108
   
 echo 
   echo "============================================================"
-  echo " Device Selection. Current as of 2012/11/08"
+  echo " ASUS Device Selection"
   echo "============================================================"
   echo 
-  echo "> Device Selection"
+  echo " Device Selection"
   echo " ALPHA SOFTWARE. NOT FINAL."
   echo
-  echo "  1) - Advent"
-  echo "  2) - Asus"
-  echo "  3) - Barnes & Noble"
-  echo "  4) - Commtiva"
-  echo "  5) - Geeksphone"
-  echo "  6) - Google"
-  echo "  7) - HP"
-  echo "  8) - HTC"
-  echo "  9) - Huawei"
-  echo "  10) - LG"
-  echo "  11) - Motorola"
-  echo "  12) - Samsung"
-  echo "  13) - Sony Ericsson"
-  echo "  14) - T-Mobile"
-  echo "  15) - Viewsonic"
-  echo "  16) - ZTE"
+  echo "  1) - Transformer Pad Infinity (tf700t)"
+  echo "  2) - Transformer Pad (tf300t)"
+  echo "  3) - EeePad Transformer Prime (tf201)"
+  echo "  4) - EeePad Transformer (tf101)"
   echo "  X) - Exit"
 
 
@@ -37,22 +25,23 @@ echo
   if [ "$?" != "1" ]
   then
     case $opt in
-     1) devices/advent.sh
-     2) devices/asus.sh
-     3) devices/barnes.sh
-     4) devices/commtiva.sh
-     5) devices/geek.sh 
-     6) devices/google.sh
-     7) devices/hp.sh
-     8) devices/htc.sh
-     9) devices/huawei.sh
-    10) devices/lg.sh
-    11) devices/motorola.sh
-    12) devices/samsung.sh
-    13) devices/sony.sh
-    14) devices/tmo.sh
-    15) devices/viewsonic.sh
-    16) devices/zte.sh
+     1) scripts/devices/acer.sh
+     2) scripts/devices/other.sh ;;
+     3) scripts/devices/asus.sh ;;
+     4) scripts/devices/other.sh ;;
+     5) scripts/devices/other.sh ;;
+     6) scripts/devices/other.sh ;;
+     7) scripts/devices/google.sh ;;
+     8) scripts/devices/hp.sh ;;
+     9) scripts/devices/htc.sh ;;
+    10) scripts/devices/huawei.sh ;;
+    11) scripts/devices/lg.sh ;;
+    12) scripts/devices/motorola.sh ;;
+    13) scripts/devices/samsung.sh ;;
+    14) scripts/devices/sony.sh ;;
+    15) scripts/devices/tmo.sh ;;
+    16) scripts/devices/other.sh ;;
+    17) scripts/devices/other.sh ;;
      x) clear; echo; echo "Goodbye."; echo; exit 1;;
      *) echo "Invalid option"; continue;;
     esac
