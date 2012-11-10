@@ -1,9 +1,5 @@
 #!/bin/bash
 # mainmenu
-<<<<<<< HEAD
-exec menu.sh 2>&1 | tee logs/menu.log
-version=0.0.1A
-=======
 exec menu.sh 2>&1 | tee logs/out.log
 version=PrivAlpha0.0.1
 
@@ -19,7 +15,6 @@ echo "If there is an error, please capture the error (will be loged to android/l
 echo "and e-mail it to me at XDAMatada@gmail.com and I will be sure to figure ASAP"
 read -p "Press [Enter] key to begin..."
 
->>>>>>> 5b302bafde872b2fc975f69bb1cb29dd56cd4070
 
 
 if [ ! -e menu ]
@@ -58,6 +53,7 @@ fi
   echo "============================================================"
   echo 
   echo "> MAIN MENU"
+  echo " ALPHA SOFTWARE. NOT FINAL."
   echo "  1 - Select Version"
   echo "  2 - Select Device"
   echo "  3 - Begin"
@@ -74,7 +70,7 @@ fi
      1) scripts/version_select.sh continue;;
      2) scripts/device_select.sh continue;;
      3) scripts/start.sh continue;;
-     4) scripts/credits.sh continue;;
+     4) scripts/about.sh continue;;
      x) clear; echo; echo "Goodbye."; echo; exit 1;;
      *) echo "Invalid option"; continue;;
     esac
