@@ -2,3 +2,4 @@ device=maguro
 version=
 version=
 version=
+version=cm9

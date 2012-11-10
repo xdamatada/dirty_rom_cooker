@@ -26,10 +26,10 @@ echo
   then
     case $opt in
 
-1) version="cm7" ;;
-2) version="cm9" ;;
-3) version="cm10" ;;
-x) clear echo;; echo "goodbye" exit 1;;
+1) VERSION="cm7" ;;
+2) VERSION="cm9" ;;
+3) VERSION="cm10" ;;
+x) clear; echo; echo "goodbye." echo; exit 1;;
  *) echo "Invalid option"; continue;;
 
     esac
