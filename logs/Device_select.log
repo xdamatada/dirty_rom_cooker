@@ -1,1 +1,1 @@
-scripts/device_select.sh: line 2: exec: menu.sh: not found
+scripts/devices/asus.sh: line 3: exec: menu.sh: not found

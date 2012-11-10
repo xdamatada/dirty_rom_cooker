@@ -14,6 +14,8 @@
     phones[epicmtd]='Epic 4G'
     phones[fascinatemtd]='Fascinate'
     phones[tass]='Galaxy Mini'
+    phones[maguro]='Galaxy Nexus GSM'
+    phones[toro]
     # ...
      
     # Print menu

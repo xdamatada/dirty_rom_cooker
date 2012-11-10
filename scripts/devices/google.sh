@@ -1,23 +1,22 @@
 #!/bin/bash
 
-version=2012/11/09Alpha
+version=20121110
   
 echo 
   echo "============================================================"
-  echo " Device Selection. Current as of $version"
+  echo " Google Device Selection. Current as of $version"
   echo "============================================================"
   echo 
   echo "> Device Selection"
   echo " ALPHA SOFTWARE. NOT FINAL."
   echo
-  echo "  1) - Nexus S"
-  echo "  2) - Nexus S 4G"
-  echo "  3) - Nexus 7"
-  echo "  4) - Galaxy Nexus (GSM)"
-  echo "  5) - Nexus One (Passion)"
-  echo "  6) - Galaxy Nexus Verizon (Toro)"
-  echo "  7) - Galaxy Nexus Sprint (Toroplus)"
+  echo "  1) - Galaxy Nexus GSM (maguro)"
+  echo "  2) - Nexus One (Passion)"
+  echo "  3) - Nexus S (crespo)"
+  echo "  4) - Nexus S 4G (crespo4g)"
+  echo "  5) - Nexus 7 (grouper)"
   echo "  X) - Exit"
+
 
 
 
@@ -25,27 +24,21 @@ echo
   echo -n "Enter option: "
   read opt
 
-  if [ "$?" != "1" ]
+ if [ "$?" != "1" ]
   then
     case $opt in
-     1) devices/advent.sh
-     2) devices/asus.sh
-     3) devices/barnes.sh
-     4) devices/commtiva.sh
-     5) devices/geek.sh 
-     6) devices/google.sh
-     7) devices/hp.sh
-     8) devices/htc.sh
-     9) devices/huawei.sh
-    10) devices/lg.sh
-    11) devices/motorola.sh
-    12) devices/samsung.sh
-    13) devices/sony.sh
-    14) devices/tmo.sh
-    15) devices/viewsonic.sh
-    16) devices/zte.sh
+
+   1) DEVICE="maguro" ;;  
+   2) DEVICE="passion" ;;
+   3) DEVICE="crespo" ;;  
+   4) DEVICE="crespo4g" ;; 
+   5) DEVICE="grouper" ;; 
      x) clear; echo; echo "Goodbye."; echo; exit 1;;
      *) echo "Invalid option"; continue;;
+
+
     esac
-  fi
-done
+
+echo "device=$DEVICE" >> variables.txt
+fi
+ 

@@ -107,7 +107,8 @@ echo
     42) DEVICE="p5113" ;; 
     43) DEVICE="mesmerizemtd" ;;  
     44) DEVICE="vibrantmtd" ;;
-
+     x) clear; echo; echo "Goodbye."; echo; exit 1;;
+     *) echo "Invalid option"; continue;;
 
 
     esac

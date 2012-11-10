@@ -1,11 +1,11 @@
 #!/bin/bash
-SAVEFILE= ~/dirty/varibles
+SAVEFILE=varibles.txt
 exec menu.sh 2>&1 | tee logs/Device_select.log
-version=Alpha20121108
+version=20121110
   
 echo 
   echo "============================================================"
-  echo " ASUS Device Selection"
+  echo " ASUS Device Selection Current as of $version "
   echo "============================================================"
   echo 
   echo " Device Selection"
@@ -23,13 +23,20 @@ echo
   echo -n "Enter option: "
   read opt
 
-  if [ "$?" != "1" ]
+ if [ "$?" != "1" ]
   then
     case $opt in
-    1) echo varible=\"$device\" >> $SAVEFILE
-     2) scripts/devices/other.sh; continue;;
+
+   1) DEVICE="tf101" ;;  
+   2) DEVICE="tf201" ;;
+   3) DEVICE="tf300t" ;;  
+   4) DEVICE="tf700t" ;;  
      x) clear; echo; echo "Goodbye."; echo; exit 1;;
      *) echo "Invalid option"; continue;;
+
+
     esac
-  fi
-done
+
+echo "device=$DEVICE" >> variables.txt
+fi
+ 

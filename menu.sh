@@ -1,4 +1,5 @@
 #!/bin/bash
+# Main Menu
 exec menu.sh 2>&1 | tee logs/out.log
 version=PrivAlpha0.0.1
 
