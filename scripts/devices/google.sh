@@ -15,10 +15,12 @@ echo
   echo "  3) - Nexus S (crespo)"
   echo "  4) - Nexus S 4G (crespo4g)"
   echo "  5) - Nexus 7 (grouper)"
+  echo "  B) - Go Back"
   echo "  X) - Exit"
 
 
 
+while true ; do
 
   echo 
   echo -n "Enter option: "
@@ -33,12 +35,15 @@ echo
    3) DEVICE="crespo" ;;  
    4) DEVICE="crespo4g" ;; 
    5) DEVICE="grouper" ;; 
+   B) exec ./menu.sh ;;
      x) clear; echo; echo "Goodbye."; echo; exit 1;;
      *) echo "Invalid option"; continue;;
 
 
     esac
 
+
 echo "device=$DEVICE" >> variables.txt
 fi
- 
+done
+

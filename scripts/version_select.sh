@@ -16,7 +16,11 @@ echo
   echo
   echo "  3) - CM10 Jellybean"
   echo
+  echo "  B) - Back to the main menu"
+  echo
   echo "  X) - Exit"
+
+while true ; do
 
   echo 
   echo -n "Enter option: "
@@ -26,16 +30,17 @@ echo
   then
     case $opt in
 
-1) VERSION="cm7" ;;
-2) VERSION="cm9" ;;
-3) VERSION="cm10" ;;
+1) VERSION="gingerbread" ;;
+2) VERSION="ics" ;;
+3) VERSION="jellybean" ;;
+B) exec ./menu.sh ;;
 x) clear; echo; echo "goodbye." echo; exit 1;;
- *) echo "Invalid option"; continue;;
+*) echo "Invalid option"; continue;;
 
     esac
 
 echo "version=$VERSION" >> variables.txt
 
   fi
-
+done
 
