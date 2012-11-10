@@ -1,1 +1,4 @@
-device=epicmtd
+device=maguro
+version=
+version=
+version=

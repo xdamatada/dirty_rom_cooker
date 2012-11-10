@@ -36,7 +36,7 @@ echo
  echo "  25) - Galaxy S III US Cellular (d2usc)"
  echo "  26) - Galaxy S III Verizon (d2vzw)"
  echo "  27) - Galaxy Tab CDMA (p1c)"
- echo "  28) - Galaxy Tab GSM (p1c)"
+ echo "  28) - Galaxy Tab GSM (p1)"
  echo "  29) - Galaxy Tab GT-P1000L (P1L)"
  echo "  30) - Galaxy Tab P1000N (P1N)"
  echo "  31) - Galaxy Tab 2 7.0 GSM (GT-P3100)"
@@ -72,46 +72,47 @@ echo
     7) DEVICE="quincyatt" ;;
     8) DEVICE="n7000" ;;
     9) DEVICE="n8000" ;;
-    10) DEVICE="epicmtd" ;;
-    11) DEVICE="epicmtd" ;;
-    12) DEVICE="epicmtd" ;;
-    13) DEVICE="epicmtd" ;;
-    14) DEVICE="epicmtd" ;;
-    15) DEVICE="epicmtd" ;;
-    16) DEVICE="epicmtd" ;;
-    17) DEVICE="epicmtd" ;;
-    18) DEVICE="epicmtd" ;;
-    19) DEVICE="epicmtd" ;;
-    20) DEVICE="epicmtd" ;;
-    21) DEVICE="epicmtd" ;;
-    22) DEVICE="epicmtd" ;;
-    23) DEVICE="epicmtd" ;;
-    24) DEVICE="epicmtd" ;;
-    25) DEVICE="epicmtd" ;;
-    26) DEVICE="epicmtd" ;;
-    27) DEVICE="epicmtd" ;;
-    28) DEVICE="epicmtd" ;;
-    29) DEVICE="epicmtd" ;;
-    30) DEVICE="epicmtd" ;;
-    31) DEVICE="epicmtd" ;;
-    32) DEVICE="epicmtd" ;;
-    33) DEVICE="epicmtd" ;;
-    34) DEVICE="epicmtd" ;;
-    35) DEVICE="epicmtd" ;;
-    36) DEVICE="epicmtd" ;;
-    37) DEVICE="epicmtd" ;;
-    38) DEVICE="epicmtd" ;;
-    39) DEVICE="epicmtd" ;;
-    40) DEVICE="epicmtd" ;;
-    41) DEVICE="epicmtd" ;;
-    42) DEVICE="epicmtd" ;;
-    43) DEVICE="epicmtd" ;;
-    44) DEVICE="epicmtd" ;;
+    10) DEVICE="n8013" ;;
+    11) DEVICE="galaxysmtd" ;;
+    12) DEVICE="galaxysbmtd" ;;
+    13) DEVICE="t769" ;;
+    14) DEVICE="galaxys2" ;;
+    15) DEVICE="i777" ;;
+    16) DEVICE="i9100g" ;;
+    17) DEVICE="i9100" ;;
+    18) DEVICE="skyrocket" ;;
+    19) DEVICE="hercules" ;;
+    20) DEVICE="i9300" ;;
+    21) DEVICE="d2att" ;;
+    22) DEVICE="d2mtr" ;;
+    23) DEVICE="d2spr" ;;
+    24) DEVICE="d2tmo" ;;
+    25) DEVICE="d2usc" ;;
+    26) DEVICE="d2vzw" ;;
+    27) DEVICE="p1c" ;;
+    28) DEVICE="p1" ;;
+    29) DEVICE="p1l" ;;
+    30) DEVICE="p1n" ;;
+    31) DEVICE="p4" ;;
+    32) DEVICE="p4tmo" ;;
+    33) DEVICE="p4vzw" ;;
+    34) DEVICE="p4wifi" ;;
+    35) DEVICE="p7100" ;;
+    36) DEVICE="p5" ;;
+    37) DEVICE="p5wifi" ;;
+    38) DEVICE="p3100" ;;
+    39) DEVICE="p3110" ;;
+    40) DEVICE="p5100" ;;
+    41) DEVICE="p5110" ;;
+    42) DEVICE="p5113" ;; 
+    43) DEVICE="mesmerizemtd" ;;  
+    44) DEVICE="vibrantmtd" ;;
+
 
 
     esac
 
-echo "device=$DEVICE" > variables.txt
+echo "device=$DEVICE" >> variables.txt
   fi
 
 

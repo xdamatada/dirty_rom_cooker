@@ -66,7 +66,7 @@ fi
   if [ "$?" != "1" ]
   then
     case $opt in
-     1) clear scripts/version_select.sh continue;;
+     1) scripts/version_select.sh continue;;
      2) scripts/device_select.sh continue;;
      3) scripts/start.sh continue;;
      4) scripts/about.sh continue;;
