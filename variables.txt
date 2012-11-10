@@ -18,3 +18,4 @@ device=maguro
 device=grouper
 device=passion
 >>>>>>> 5b302bafde872b2fc975f69bb1cb29dd56cd4070
+device=passion

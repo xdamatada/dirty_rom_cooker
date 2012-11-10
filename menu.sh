@@ -1,25 +1,9 @@
 #!/bin/bash
 # mainmenu
-<<<<<<< HEAD
+
 exec menu.sh 2>&1 | tee logs/menu.log
 version=0.0.1A
-=======
-exec menu.sh 2>&1 | tee logs/out.log
-version=PrivAlpha0.0.1
 
-
-
-echo
-echo "Welcome to the automated Cyanogenmod rom compilier."
-echo "This script was created by Matada@XDA Developers."
-echo "the original thread for this script can be found at: http://www.forums.xda-developers.com/ "
-clear
-echo "This is beta software. While it works in my environment, it may not work in yours."
-echo "If there is an error, please capture the error (will be loged to android/logs/log.txt)"
-echo "and e-mail it to me at XDAMatada@gmail.com and I will be sure to figure ASAP"
-read -p "Press [Enter] key to begin..."
-
->>>>>>> 5b302bafde872b2fc975f69bb1cb29dd56cd4070
 
 
 if [ ! -e menu ]
