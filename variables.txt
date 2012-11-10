@@ -1,0 +1,16 @@
+device=maguro
+device=maguro
+device=maguro
+device=maguro
+device=maguro
+device=maguro
+device=crespo4g
+device=crespo4g
+device=passion
+device=passion
+device=crespo
+device=crespo
+device=crespo
+device=maguro
+device=grouper
+device=passion
