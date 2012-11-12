@@ -36,11 +36,21 @@ while true ; do
   then
     case $opt in
 
-   1) DEVICE="maguro" ;;  
-   2) DEVICE="passion" ;;
-   3) DEVICE="crespo" ;;  
-   4) DEVICE="crespo4g" ;; 
-   5) DEVICE="grouper" ;; 
+   1) DEVICE="olympus" ;;  
+   2) DEVICE="motus" ;;
+   3) DEVICE="morrison" ;;  
+   4) DEVICE="zepplin" ;; 
+   5) DEVICE="jordan" ;; 
+   6) DEVICE="sholes" ;;  
+   7) DEVICE="droid2" ;;
+   8) DEVICE="cdma" ;;  
+   9) DEVICE="droid2we" ;; 
+   10) DEVICE="shadow" ;; 
+   11) DEVICE="sunfire" ;;  
+   12) DEVICE="wingray" ;;
+   13) DEVICE="crespo" ;;  
+   14) DEVICE="crespo4g" ;; 
+   15) DEVICE="grouper" ;; 
    B) exec ./menu.sh ;;
      x) clear; echo; echo "Goodbye."; echo; exit 1;;
      *) echo "Invalid option"; continue;;

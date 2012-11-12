@@ -40,11 +40,22 @@ echo
   then
     case $opt in
 
-   1) DEVICE="maguro" ;;  
-   2) DEVICE="passion" ;;
-   3) DEVICE="crespo" ;;  
-   4) DEVICE="crespo4g" ;; 
-   5) DEVICE="grouper" ;; 
+   1) DEVICE="e739" ;;  
+   2) DEVICE="c800" ;;
+   3) DEVICE="p930" ;;  
+   4) DEVICE="p990" ;; 
+   5) DEVICE="p920" ;; 
+   6) DEVICE="p970" ;;  
+   7) DEVICE="e720" ;;
+   8) DEVICE="e510" ;;  
+   9) DEVICE="e400" ;; 
+  10) DEVICE="su640" ;; 
+  11) DEVICE="p350" ;;  
+  12) DEVICE="p500" ;;
+  13) DEVICE="c660" ;;  
+  14) DEVICE="e730" ;; 
+  15) DEVICE="p999" ;; 
+  16) DEVICE="p925" ;;  
    B) exec ./menu.sh ;;
      x) clear; echo; echo "Goodbye."; echo; exit 1;;
      *) echo "Invalid option"; continue;;
