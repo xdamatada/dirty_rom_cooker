@@ -54,6 +54,6 @@ while true ; do
     esac
 
 
-echo "device=$DEVICE" >> variables.txt
+echo "device=$DEVICE" >> variables
 fi
 done
