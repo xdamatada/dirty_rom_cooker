@@ -1,57 +1,53 @@
 #!/bin/bash
 
-version=Dev_sel_2012/11/08_ALPHA
+version=20121111
   
 echo 
   echo "============================================================"
-  echo " Device Selection. Current as of 2012/11/08"
+  echo " Misc. Device Selection. Current as of $version "
   echo "============================================================"
   echo 
   echo "> Device Selection"
   echo " ALPHA SOFTWARE. NOT FINAL."
   echo
-  echo "  1) - ZTE Blade"
-  echo "  2) - Asus"
-  echo "  3) - Barnes & Noble Nook Color"
-  echo "  4) - Viewsonic G Tablet"
-  echo "  5) - Geeksphone ONE"
-  echo "  6) - HP Touchpad"
-  echo "  7) - Huawei U8150 Ideos"
-  echo "  8) - Huawei U8220 T-Mobile Pulse"
-  echo "  9) - ZTEV9"
-  echo "  10) - Advent Vega"
-  echo "  11) - Commtiva Z71 & Variants (Z71)"
-  echo "  12) - Geeksphone Zero"
-  echo "  13) - Acer Iconia A700"
+  echo "  1) - Acer Iconia A700 (A700)"
+  echo "  2) - Advent Vega (Vega)"
+  echo "  3) - Barnes & Noble Nook Color (Encore)"
+  echo "  4) - Commtiva Z71 & Variants (Z71)"
+  echo "  5) - Geeksphone ONE (One)"
+  echo "  6) - HP Touchpad (Tenderloin)"
+  echo "  7) - Huawei U8150 / Ideos (U8150)"
+  echo "  8) - Huawei U8220 / T-Mobile Pulse (U8220)"
+  echo "  9) - Viewsonic G Tablet (SMB_A1002)"
+  echo " 10) - ZTE Blade (Blade)"
+  echo " 11) - ZTE V9 (V9)"
+  echo "  B) - Go Back"
   echo "  X) - Exit"
 
 
+while true ; do
 
   echo 
   echo -n "Enter option: "
   read opt
 
-  if [ "$?" != "1" ]
+ if [ "$?" != "1" ]
   then
     case $opt in
-     1) devices/advent.sh
-     2) devices/asus.sh
-     3) devices/barnes.sh
-     4) devices/commtiva.sh
-     5) devices/geek.sh 
-     6) devices/google.sh
-     7) devices/hp.sh
-     8) devices/htc.sh
-     9) devices/huawei.sh
-    10) devices/lg.sh
-    11) devices/motorola.sh
-    12) devices/samsung.sh
-    13) devices/sony.sh
-    14) devices/tmo.sh
-    15) devices/viewsonic.sh
-    16) devices/zte.sh
+
+   1) DEVICE="maguro" ;;  
+   2) DEVICE="passion" ;;
+   3) DEVICE="crespo" ;;  
+   4) DEVICE="crespo4g" ;; 
+   5) DEVICE="grouper" ;; 
+   B) exec ./menu.sh ;;
      x) clear; echo; echo "Goodbye."; echo; exit 1;;
      *) echo "Invalid option"; continue;;
+
+
     esac
-  fi
+
+
+echo "device=$DEVICE" >> variables.txt
+fi
 done

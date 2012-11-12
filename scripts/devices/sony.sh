@@ -1,61 +1,60 @@
 #!/bin/bash
 
-version=Dev_sel_2012/11/08_ALPHA
+version=20121111
   
 echo 
   echo "============================================================"
-  echo " Device Selection. Current as of 2012/11/08"
+  echo " Sony Device Selection. Current as of $version "
   echo "============================================================"
   echo 
   echo "> Device Selection"
   echo " ALPHA SOFTWARE. NOT FINAL."
   echo
   echo "  1) - LiveWithWalkman-WT19i (coconut)"
-  echo "  2) - Xperia X10 (es209ra)"
-  echo "  3) - Xperia Neo V"
-  echo "  4) - Xperia Neo MT15i"
-  echo "  5) - Xperia Acro S"
-  echo "  6) - Xperia Pro-MK16i "
-  echo "  7) - Xperia Mini Pro-SK17i "
-  echo "  8) - Xperia X10 Mini Pro"
-  echo "  9) - Xperia T"
-  echo "  10) - Xperia S"
-  echo "  11) - Xperia X10 Mini"
-  echo "  12) - Xperia Active"
-  echo "  13) - Xperia X8"
-  echo "  14) - Xperia Mini"
-  echo "  15) - Xperia Ray"
-  echo "  16) - Xperia Play GSM (Zeus)"
-  echo "  X) - Xperia Play CDMA (Zeusc)"
+  echo "  2) - Xperia Acro S (Hikari)"
+  echo "  3) - Xperia Active (Satsuma)"
+  echo "  4) - Xperia Mini (Smultron)"
+  echo "  5) - Xperia Mini Pro (Mango)"
+  echo "  6) - Xperia Neo (Hallon)"
+  echo "  7) - Xperia Neo V (Haida)"
+  echo "  8) - Xperia Play CDMA (Zeusc)"
+  echo "  9) - Xperia Play GSM (Zeus)"
+  echo " 10) - Xperia Pro (Iyokan) "
+  echo " 11) - Xperia Ray (Urushi)"
+  echo " 12) - Xperia S (Nozomi)"
+  echo " 13) - Xperia T (Mint)"
+  echo " 14) - Xperia X8 (Shakira)"
+  echo " 15) - Xperia X10 (es209ra)"
+  echo " 16) - Xperia X10 Mini (Robyn)"
+  echo " 17) - Xperia X10 Mini Pro (Mimmi)"
+  echo "  B) - Go Back"
   echo "  X) - Exit"
 
 
+
+while true ; do
 
   echo 
   echo -n "Enter option: "
   read opt
 
-  if [ "$?" != "1" ]
+ if [ "$?" != "1" ]
   then
     case $opt in
-     1) devices/advent.sh
-     2) devices/asus.sh
-     3) devices/barnes.sh
-     4) devices/commtiva.sh
-     5) devices/geek.sh 
-     6) devices/google.sh
-     7) devices/hp.sh
-     8) devices/htc.sh
-     9) devices/huawei.sh
-    10) devices/lg.sh
-    11) devices/motorola.sh
-    12) devices/samsung.sh
-    13) devices/sony.sh
-    14) devices/tmo.sh
-    15) devices/viewsonic.sh
-    16) devices/zte.sh
+
+   1) DEVICE="maguro" ;;  
+   2) DEVICE="passion" ;;
+   3) DEVICE="crespo" ;;  
+   4) DEVICE="crespo4g" ;; 
+   5) DEVICE="grouper" ;; 
+   B) exec ./menu.sh ;;
      x) clear; echo; echo "Goodbye."; echo; exit 1;;
      *) echo "Invalid option"; continue;;
+
+
     esac
-  fi
+
+
+echo "device=$DEVICE" >> variables.txt
+fi
 done

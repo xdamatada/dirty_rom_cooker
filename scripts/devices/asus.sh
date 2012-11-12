@@ -1,6 +1,6 @@
 #!/bin/bash
 SAVEFILE=varibles.txt
-exec menu.sh 2>&1 | tee logs/Device_select.log
+exec asus.sh 2>&1 | tee logs/Device_select.log
 version=20121110
   
 echo 
