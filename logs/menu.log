@@ -1,1 +1,1 @@
-/home/matada/dirty/menu.sh: line 4: exec: menu.sh: not found
+./menu.sh: line 4: exec: menu.sh: not found
