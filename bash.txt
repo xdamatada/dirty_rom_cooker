@@ -1,0 +1,3 @@
+#AndroidDev PATH
+export PATH=${PATH}:~/androidsdk/tools
+export PATH=${PATH}:~/androidsdk/platform-tools

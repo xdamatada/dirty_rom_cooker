@@ -48,15 +48,16 @@ echo " Device Selection"
   echo
   echo " 1) - Prepare your Environment" 
   echo " 2) - Prepare ADB"
-  echo " 3) - Download the Source"
-  echo " 4) - Prepare source for your $var2 using $var1. "
-  echo " 5) - Compile the source."
-  echo " 6) - Build a Custom kernel (If Available)"
+  echo " 3) - Prepare for source download"
+  echo " 4) - Download the Source"
+  echo " 5) - Prepare source for your $var2 using $var1. "
+  echo " 6) - Compile the source."
+  echo " 7) - Build a Custom kernel (If Available)"
   echo " U) - Check for source updates"
   echo " B) - Go Back"
-  echo " X) - Quit"
-  echo 
 
+  
+while true ; do
 
  echo
 echo -n "Enter option: "
@@ -65,27 +66,16 @@ echo -n "Enter option: "
   if [ "$?" != "1" ]
   then
 case $opt in
-     1) scripts/devices/other.sh ;;
-     2) scripts/devices/asus.sh ;;
-     3) scripts/devices/other.sh ;;
-     4) scripts/devices/other.sh ;;
-     5) scripts/devices/other.sh ;;
-     6) scripts/devices/google.sh ;;
-     7) scripts/devices/hp.sh ;;
-     8) scripts/devices/htc.sh ;;
-     9) scripts/devices/huawei.sh ;;
-    10) scripts/devices/lg.sh ;;
-    11) scripts/devices/motorola.sh ;;
-    12) scripts/devices/samsung.sh ;;
-    13) scripts/devices/sony.sh ;;
-    14) scripts/devices/tmo.sh ;;
-    15) scripts/devices/other.sh ;;
-    16) scripts/devices/other.sh ;;
+     1) ~/dirty/scripts/buildscripts/prep/$var1.sh ;;
+     2) ~/dirty/scripts/buildscripts/adb.sh ;;
+     3) ~/dirty/scripts/buildscripts/prepdownload.sh ;;
+     4) buildscripts/source/$var1.sh ;;
+     5) buildscripts/kernel.sh ;;
+     6) buildscripts/update.sh ;;
+ 
      B) exec ./menu.sh ;;
-     x) clear; echo; echo "Goodbye."; echo; exit 1;;
      *) echo "Invalid option"; continue;;
     esac
 fi
 done
 ;;
-
